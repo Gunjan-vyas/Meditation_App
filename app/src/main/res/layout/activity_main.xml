@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:scrollbarSize="100dp"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/timer_sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="300dp"
+        android:minWidth="300dp"
+        />
+
+    <TextView
+        android:id="@+id/timer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:60"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:onClick="start_timer"
+        android:text="START" />
+
+    <Button
+        android:id="@+id/instr_btn"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:onClick="start_instr"
+        android:text="INSTRUCTION"
+        android:textStyle="italic" />
+
+
+</LinearLayout>
