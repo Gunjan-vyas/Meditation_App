@@ -6,3 +6,4 @@ Important learning form this project
   How to change icon and background image of the app.
   How to work with Seekbar
   Text font, styling of overall app.
+Need to work on https://www.youtube.com/watch?v=1fV9NmvxXJo
