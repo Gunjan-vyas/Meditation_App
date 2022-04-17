@@ -7,3 +7,4 @@ Important learning form this project
   How to work with Seekbar
   Text font, styling of overall app.
   Added daily reminder notification using firebase cloud messaging(FCM)  
+<!-- need to commit changes done in android studio new features add -->
