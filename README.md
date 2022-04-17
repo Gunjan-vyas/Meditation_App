@@ -8,3 +8,5 @@ Important learning form this project
   Text font, styling of overall app.
   Added daily reminder notification using firebase cloud messaging(FCM)  
 <!-- need to commit changes done in android studio new features add -->
+and can use alarm manager to select time and days of reminder specific to user itself by following this:-
+https://stackoverflow.com/questions/33055129/how-to-show-a-notification-everyday-at-a-certain-time-even-when-the-app-is-close
