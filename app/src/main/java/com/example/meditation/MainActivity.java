@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button instr_btn;
     CountDownTimer countDownTimer;
     Boolean counterIsActive=false;
+    Boolean forInstruction=false;
     MediaPlayer mediaPlayer;
     MediaPlayer mediaSecond;
     @Override
@@ -76,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onFinish() {
+                    mediaSecond.stop();
+                    resetInstr();
                     reset();
                     if(mediaPlayer!=null)
                         mediaPlayer.start();
@@ -91,10 +94,11 @@ public class MainActivity extends AppCompatActivity {
         timer_tv.setText("0:60");
         timer_sb.setProgress(60);
         countDownTimer.cancel();
-        mediaSecond.stop();
+//        mediaSecond.pause();
         start_btn.setText("START");
         timer_sb.setEnabled(true);
         counterIsActive=false;
+        forInstruction=false;
     }
 
     @Override
@@ -106,6 +110,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void start_instr(View view) {
+        if(forInstruction==false){
             mediaSecond.start();
+            instr_btn.setText("STOP INSTRUCTION");
+            forInstruction=true;
+        }
+        else{
+            resetInstr();
+//            mediaSecond.stop();
+        }
+    }
+
+    private void resetInstr() {
+        instr_btn.setText("INSTRUCTION");
+        mediaSecond.pause();
+        forInstruction=false;
+
     }
 }
