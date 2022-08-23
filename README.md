@@ -15,4 +15,4 @@ https://stackoverflow.com/questions/33055129/how-to-show-a-notification-everyday
 
 
 
-![meditation_app_photo](https://user-images.githubusercontent.com/73429092/186187128-691ccabd-a14b-4760-84ec-e5af1d0bac15.jpg = 250x250)
+![meditation_app_photo](https://user-images.githubusercontent.com/73429092/186187128-691ccabd-a14b-4760-84ec-e5af1d0bac15.jpg = 250x)
